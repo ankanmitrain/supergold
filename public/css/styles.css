@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.lottery-form {
+  position: relative;
+  width: 210mm;
+  height: 295mm;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+
+.input {
+  position: absolute;
+  background: transparent;
+  outline: none;
+  z-index: 10;
+  border: none;
+  font-family: Helvetica, sans-serif;
+}
+
+.input.date {
+  top: 18.8%;
+  right: 32%;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.input.time {
+  top: 198px;
+  right: 20px;
+  width: 200px;
+  font-size: 30px;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+}
+
+.input.id {
+  top: 12.8%;
+  right: 39%;
+  width: 200px;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.input.id2 {
+  top: 10.5%;
+  right: 2%;
+  width: 200px;
+  font-size: 36px;
+  color: yellow;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.input.name {
+  top: 252px;
+  right: 245px;
+  width: 200px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b82f6;
+  text-align: center;
+}
+
+.grid {
+  position: absolute;
+  display: grid;
+  z-index: 10;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+}
+
+.grid4 {
+  grid-template-columns: 11ch 11ch 11ch 11ch 11ch;
+  column-gap: 1px;
+  row-gap: 6px;
+  width: 65%;
+  right: 10px;
+}
+
+.grid5 {
+  grid-template-columns: 12ch 12ch 12ch 12ch 12ch;
+  column-gap: 1px;
+  row-gap: 6px;
+  width: 65%;
+  right: 10px;
+}
+
+.grid10 {
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 100%;
+  left: 2%;
+}
+
+.secondPrize {
+  top: 290px;
+}
+
+.thirdPrize {
+  top: 365px;
+}
+
+.fourthPrize {
+  top: 435px;
+}
+
+.fifthPrize {
+  top: 508px;
+}
+
+.sixthPrize {
+  top: 580px;
+}
+
+.seventhPrize {
+  top: 694px;
+}
+
+.date-container {
+  position: absolute;
+  background: #25da4f;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 218, 79, 1) 0%,
+    rgba(242, 239, 70, 1) 100%
+  );
+  bottom: 9.5%;
+  height: 3%;
+  left: 50%;
+  font-weight: bold;
+  transform: translateX(-50%);
+  width: 97.5%;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  color: black;
+  border: 1px solid black;
+}
+
+.text-input {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-weight: bold;
+  color: black;
+}
+
+.text-input.medium {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  color: black;
+  background: transparent;
+  outline: none;
+}
+
+.text-input.small {
+  text-align: center;
+  width: 36px;
+  font-size: 16px;
+  color: black;
+  background: transparent;
+  outline: none;
+}
+
+.download-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.download-btn {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px 10px 10px 20px;
+}
+.reset-btn {
+  background-color: #f63b3b;
+  color: white;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #25da4f;
+}
+.download-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.download-btn:active {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(4px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+@media print {
+  .lottery-form {
+    width: 210mm;
+    height: 295mm;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+@media print {
+  .input {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .background-image {
+    display: none;
+  }
+
+  .grid {
+    display: none;
+  }
+
+  .date-container {
+    display: none;
+  }
+}
+
+@media print {
+  .download-container {
+    display: none;
+  }
+}
+
+.hero {
+  /*height: 100vh;               /* Full screen height (optional) */
+  background-image: url("superlottery.png");
+  background-size: cover;      /* Ensures the image scales nicely */
+  background-position: center; /* Keeps the focal point centered */
+  background-repeat: no-repeat;
+}
